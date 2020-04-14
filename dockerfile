@@ -9,4 +9,4 @@ RUN mv /app/omnicore-0.8.1 /app/omnicore
 RUN mkdir /app/blockdata
 RUN mkdir /app/config
 # RUN /app/omnicore/bin/omnicored --datadir=/app/blockdata --conf=/app/config
-ENTRYPOINT ["/app/omnicore/bin/omnicored --datadir=/app/blockdata --conf=/app/config"]
+ENTRYPOINT ["/app/omnicore/bin/omnicored --datadir=/app/blockdata"]
