@@ -9,8 +9,8 @@ RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/l/libdb4-cxx-4.8
 RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/l/libdb4-cxx-devel-4.8.30-13.el7.x86_64.rpm
 RUN rpm -ivh libdb4-4.8.30-13.el7.x86_64.rpm
 RUN rpm -ivh libdb4-devel-4.8.30-13.el7.x86_64.rpm
-RUN rpm -ivhlibdb4-cxx-4.8.30-13.el7.x86_64.rpm
-RUN rpm -ivhlibdb4-cxx-devel-4.8.30-13.el7.x86_64.rpm
+RUN rpm -ivh libdb4-cxx-4.8.30-13.el7.x86_64.rpm
+RUN rpm -ivh libdb4-cxx-devel-4.8.30-13.el7.x86_64.rpm
 RUN git clone https://github.com/OmniLayer/omnicore.git
 RUN /app/omnicore/autogen.sh
 RUN /app/omnicore/configure
