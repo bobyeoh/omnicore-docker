@@ -19,6 +19,4 @@ RUN yum -y install nodejs git wget vim gcc gcc-c++ autoconf automake make zlib z
 RUN wget https://github.com/OmniLayer/omnicore/releases/download/v0.8.1/omnicore-0.8.1-x86_64-linux-gnu.tar.gz
 RUN tar -zxvf omnicore-0.8.1-x86_64-linux-gnu.tar.gz
 RUN mv /app/omnicore-0.8.1 /app/omnicore
-RUN chmod 700 /app/blockdata
-RUN chmod 700 /app/config
 ENTRYPOINT ["/app/omnicore/bin/omnicored -conf=/app/config -datadir=/app/blockdata", "--daemon"]
