@@ -8,8 +8,7 @@ RUN apt-get -y install git
 RUN apt-get -y install pkg-config
 RUN apt-get -y install autoconf
 RUN git clone https://github.com/OmniLayer/omnicore.git
-RUN cd omnicore/
-RUN ./autogen.sh
-RUN ./configure
+RUN ./app/omnicore/autogen.sh
+RUN ./app/omnicore/configure
 RUN make
 ENTRYPOINT ["/app/omnicore/src/omnicored", "--daemon"]
