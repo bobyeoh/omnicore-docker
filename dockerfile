@@ -7,5 +7,6 @@ RUN wget https://github.com/OmniLayer/omnicore/releases/download/v0.8.1/omnicore
 RUN tar -zxvf omnicore-0.8.1-x86_64-linux-gnu.tar.gz
 RUN mv /app/omnicore-0.8.1 /app/omnicore
 RUN mkdir /app/blockdata
+RUN mkdir /app/config
 # RUN /app/omnicore/bin/omnicored --datadir=/app/blockdata --conf=/app/config
 ENTRYPOINT ["/app/omnicore/bin/omnicored --datadir=/app/blockdata --conf=/app/config"]
