@@ -11,6 +11,7 @@ RUN mkdir app
 RUN cd /app
 RUN git clone https://github.com/OmniLayer/omnicore.git
 RUN cd omnicore/
+RUN ls
 RUN ./app/omnicore/autogen.sh
 RUN ./app/omnicore/configure
 RUN make
