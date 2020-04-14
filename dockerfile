@@ -8,4 +8,4 @@ RUN tar -zxvf omnicore-0.8.1-x86_64-linux-gnu.tar.gz
 RUN mkdir config
 RUN mkdir blockdata
 RUN mv /app/omnicore-0.8.1 /app/omnicore
-ENTRYPOINT ["/app/omnicore/bin/omnicored -conf=/app/config -datadir=/app/blockdata", "--daemon"]
+ENTRYPOINT ["/app/omnicore/bin/omnicored -datadir=/app/blockdata", "--daemon"]
