@@ -20,4 +20,4 @@ RUN wget https://github.com/OmniLayer/omnicore/releases/download/v0.8.1/omnicore
 RUN tar -zxvf omnicore-0.8.1-x86_64-linux-gnu.tar.gz
 RUN mv /app/omnicore-0.8.1 /app/omnicore
 RUN mkdir /app/blockdata
-ENTRYPOINT ["/app/omnicore/bin/omnicored -conf=/app/config -datadir=/app/blockdata", "--daemon"]
+ENTRYPOINT ["/app/omnicore/bin/omnicored", "--daemon"]
