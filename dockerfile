@@ -1,6 +1,5 @@
 FROM ubuntu
 LABEL maintainer="Bob Yang<b@001.gs>"
-WORKDIR /app
 EXPOSE 8332
 
 RUN apt-get update
