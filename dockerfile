@@ -18,5 +18,5 @@ RUN yum -y install nodejs git wget vim gcc gcc-c++ autoconf automake make zlib z
 # RUN make install
 RUN wget https://github.com/OmniLayer/omnicore/releases/download/v0.8.1/omnicore-0.8.1-x86_64-linux-gnu.tar.gz
 RUN tar -zxvf omnicore-0.8.1-x86_64-linux-gnu.tar.gz
-RUN ls
-ENTRYPOINT ["/app/omnicore/src/omnicored", "--daemon"]
+RUN mv omnicore-0.8.1-x86_64-linux-gnu omnicore
+ENTRYPOINT ["/app/omnicore/bin/omnicored", "--daemon"]
